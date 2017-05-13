@@ -1,0 +1,13 @@
+build/X86/gem5.opt configs/practice/new_script.py -c ./tests/benchmarks/sha -o './tests/benchmarks/inputs/example-sha-input.txt' --l2_size='1MB' --l1d_size='128kB' --l2_type='mostly_incl'
+
+
+
+build/X86/gem5.opt configs/practice/new_script.py -c ./tests/benchmarks/BFS -o './tests/benchmarks/inputs/RL3k.graph' --l2_size='128kB' --l1d_size='64kB' --l1i_size='64kB' --l2_type='mostly_excl'
+
+
+build/X86/gem5.opt configs/practice/new_script.py -c ./tests/benchmarks/blocked-matmul --l2_size='128kB' --l1d_size='64kB' --l1i_size='64kB' --l2_type='mostly_excl'
+
+
+build/X86/gem5.opt configs/practice/new_script.py -c ./tests/benchmarks/sha -o './tests/benchmarks/inputs/example-sha-input.txt' --l2_size='128kB' --l1d_size='64kB' --l1i_size='64kB' --l2_type='mostly_excl'
+
+build/X86/gem5.opt configs/practice/new_script.py -c ./tests/benchmarks/queens -o '-c 10' --l2_size='128kB' --l1d_size='64kB' --l1i_size='64kB' --l2_type='mostly_excl'
